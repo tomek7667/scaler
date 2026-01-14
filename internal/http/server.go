@@ -47,6 +47,7 @@ func (s *Server) Serve() error {
 	defer s.dber.Close()
 
 	s.AddIndexRoute()
+	s.AddScalesRoute()
 
 	addr := fmt.Sprintf(":%d", s.port)
 	srv := &http.Server{

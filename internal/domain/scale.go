@@ -7,6 +7,7 @@ type Entry struct {
 
 type Scale struct {
 	ID            string  `json:"id"`
+	Name          string  `json:"name"`
 	ScalePassword string  `json:"scalePassword"`
 	Entries       []Entry `json:"entries"`
 }
