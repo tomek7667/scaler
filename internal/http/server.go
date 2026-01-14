@@ -16,7 +16,7 @@ import (
 )
 
 type Dber interface {
-	SaveScale(link domain.Scale)
+	SaveScale(scale domain.Scale)
 	GetScales() []domain.Scale
 	DeleteScale(id string)
 	Close()
